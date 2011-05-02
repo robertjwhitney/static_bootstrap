@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+
+compile '/img/*/' do
+end
+
+route '/img/*/' do
+  item.identifier.chop + '.' + item[:extension] 
+end
+
+compile '/js/*/' do
+  filter :yui_compress
+end
+
+route '/js/*/' do
+  item.identifier.chop + '.' + item[:extension] 
+end
+
+
+compile '/css/*/' do
+   filter :zass, :style => :compressed
+end
+
+route "/css/lib/*" do
+  nil
+end
+
+route '/css/*/' do
+   item.identifier.chop + '.css'
+end
+
+compile '*' do
+   filter :haml
+   layout 'default'
+end
+
+route '*' do
+  item.identifier + 'index.html'
+end
+
+layout '*', :haml, :format => :html5
