@@ -10,7 +10,7 @@ Usage
 
     Bundle Install
 
-    Make Your Magical Site
+Create your magical site.
 
     bundle exec nanoc3 compile
 
