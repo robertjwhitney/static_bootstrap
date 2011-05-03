@@ -1,3 +1,4 @@
+#Borrowed from Nutils gem
 YUI_JAR = File.dirname(__FILE__) + "/../tools/yuicompressor-2.4.6.jar"
 
 class YuiCompressor < Nanoc3::Filter
