@@ -5,15 +5,13 @@ GEM
       rack (>= 1.0.0)
     cri (1.0.1)
     haml (3.1.1)
-    nanoc (3.1.6)
-      nanoc3 (>= 3.1.6)
-    nanoc3 (3.1.6)
+    nanoc (3.1.7)
+      nanoc3 (>= 3.1.7)
+    nanoc3 (3.1.7)
       cri (>= 1.0.0)
-    nanoc_fuel (0.0.1)
+    nanoc_fuel (0.0.3)
       haml (>= 3.1.1)
       nanoc (>= 3.1.6)
-    nutils (0.8.2)
-      nanoc3 (>= 3.1.2)
     rack (1.2.2)
     sass (3.1.1)
 
@@ -25,6 +23,5 @@ DEPENDENCIES
   haml
   nanoc3
   nanoc_fuel
-  nutils
   rack
   sass
