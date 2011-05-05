@@ -12,6 +12,7 @@ compile '/js/*/' do
     when 'js'
       filter :yuicompressor
     when 'min.js'
+      #ignore already compressed scripts
   end
 end
 
