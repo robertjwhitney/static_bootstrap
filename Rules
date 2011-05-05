@@ -8,7 +8,11 @@ route '/img/*/' do
 end
 
 compile '/js/*/' do
-  filter :yuicompress
+  case item[:extension]
+    when 'js'
+      filter :yuicompressor
+    when 'min.js'
+  end
 end
 
 route '/js/*/' do
