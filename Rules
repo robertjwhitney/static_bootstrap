@@ -8,7 +8,7 @@ route '/img/*/' do
 end
 
 compile '/js/*/' do
-  filter :yui_compress
+  filter :yuicompress
 end
 
 route '/js/*/' do
