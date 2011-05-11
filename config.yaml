@@ -1,11 +1,16 @@
 # Some base configuration used to generate root_url and root_path helpers (lib/helpers.rb)
-host: 'example.com'
-path: '/'
-project: 'project directory'
 
-# A list of file extensions that nanoc will consider to be textual rather than
-# binary. If an item with an extension not in this list is found,  the file
-# will be considered as binary.
+# host: 'example.com'
+# path: '/'
+# project: 'project directory'
+
+# Deploy with Rsync
+# http://nanoc.stoneship.org/docs/6-guides/#deploying-sites
+
+# deploy:
+#   default:
+#     dst: username@123.456.78.910:/path/to/project
+
 text_extensions: [ 'css', 'erb', 'haml', 'htm', 'html', 'js', 'less', 'markdown', 'md', 'php', 'rb', 'sass', 'scss', 'txt', 'xhtml', 'xml' ]
 
 # The path to the directory where all generated files will be written to. This
