@@ -1,3 +1,4 @@
+include Nanoc3::Helpers::Rendering
 include NanocFuel::Helpers::Google
 
 def root_url
