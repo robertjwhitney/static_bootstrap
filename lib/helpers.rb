@@ -1,4 +1,3 @@
-include NanocFuel::Helpers::Facebook
 include NanocFuel::Helpers::Google
 
 def root_url
