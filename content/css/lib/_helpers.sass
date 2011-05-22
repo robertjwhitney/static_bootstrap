@@ -1,0 +1,21 @@
+//Image Replacement (html5 BP)
+.ir
+  display: block
+  text-indent: -999em
+  overflow: hidden
+  background-repeat: no-repeat
+  text-align: left
+  direction: ltr
+  br
+    display: none
+
+//nicolasgallagher.com/micro-clearfix-hack/ (html5 BP)    
+.clearfix
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both
+  zoom: 1
