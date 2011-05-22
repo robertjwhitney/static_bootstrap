@@ -25,8 +25,7 @@ compile '/css/*/' do
   filter :sass, :style => :compressed
 end
 
-route "/css/lib/*" do
-  nil
+route '/css/lib/*' do
 end
 
 route '/css/*/' do
