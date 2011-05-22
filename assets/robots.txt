@@ -1,5 +1,0 @@
-# Refers to all robots
-User-agent: *
-
-# Disallow robots from visiting the site's pages
-Disallow: /
