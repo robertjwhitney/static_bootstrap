@@ -9,8 +9,6 @@ Static Bootstrap is a nanoc site with
 * CSS is minified using the built in Sass output format.
 * The smusher gem is included (see below for usage)
 
-It also has a growing library of assets aside from that, to help speed up development.
-
 Usage
 ------------
 
