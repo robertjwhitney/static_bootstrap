@@ -22,7 +22,7 @@ end
 
 
 compile '/css/*/' do
-   filter :sass, :style => :compressed
+  filter :sass, :style => :compressed
 end
 
 route "/css/lib/*" do
@@ -30,16 +30,25 @@ route "/css/lib/*" do
 end
 
 route '/css/*/' do
-   item.identifier.chop + '.css'
+  item.identifier.chop + '.css'
 end
 
 compile '*' do
-   filter :haml
-   layout 'default'
+  case item[:extension]
+    when 'txt'
+    when '*'
+      filter :haml
+      layout 'default'
+    end
 end
 
 route '*' do
-  item.identifier + 'index.html'
+  case item[:extension]
+    when 'txt'
+      item.identifier.chop + '.txt'
+    when '*'
+      item.identifier + 'index.html'
+  end
 end
 
 layout '*', :haml, :format => :html5
