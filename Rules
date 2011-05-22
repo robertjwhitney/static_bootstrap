@@ -35,20 +35,24 @@ end
 
 compile '*' do
   case item[:extension]
+    when 'ico'
     when 'txt'
-    when '*'
+    when 'haml'
       filter :haml
       layout 'default'
-    end
+  end
+end
+
+route '/favicon/' do
+ item.identifier.chop + '.ico'
+end
+
+route '/robots/' do
+  item.identifier.chop + '.txt'
 end
 
 route '*' do
-  case item[:extension]
-    when 'txt'
-      item.identifier.chop + '.txt'
-    when '*'
-      item.identifier + 'index.html'
-  end
+  item.identifier + 'index.html'
 end
 
 layout '*', :haml, :format => :html5
