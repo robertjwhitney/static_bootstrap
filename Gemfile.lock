@@ -11,13 +11,14 @@ GEM
     haml (3.1.1)
     httpclient (2.2.0.2)
     json (1.5.1)
+    mime-types (1.16)
     nanoc (3.1.7)
       nanoc3 (>= 3.1.7)
-    nanoc3 (3.1.7)
-      cri (>= 1.0.0)
-    nanoc_fuel (0.0.3)
+    nanoc-fuel (0.0.6)
       haml (>= 3.1.1)
       nanoc (>= 3.1.6)
+    nanoc3 (3.1.7)
+      cri (>= 1.0.0)
     nutils (0.8.2)
       nanoc3 (>= 3.1.2)
     open4 (1.0.1)
@@ -37,8 +38,9 @@ PLATFORMS
 DEPENDENCIES
   adsf
   haml
+  mime-types
+  nanoc-fuel
   nanoc3
-  nanoc_fuel
   nutils
   rack
   sass

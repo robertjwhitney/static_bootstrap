@@ -1,6 +1,7 @@
 source "http://rubygems.org"
 
 gem "nanoc3"
+gem "mime-types"
 gem "rack"
 gem "adsf"
 gem "haml"
